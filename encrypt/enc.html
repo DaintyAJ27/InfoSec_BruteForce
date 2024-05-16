@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decoder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Multi-Decoder.</h1>
+            <button class="brute-force-btn" onclick="accessBruteForce()">Brute Force</button>
+        </header>
+        <main>
+            
+            <div class="decoder-box">
+                <div class="dropdown">
+                    <select id="cipher-select">
+                        <option value="caesar">Caesar Cipher</option>
+                        <option value="base64">Base64</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="input-text" placeholder="Input">
+                    <input type="number" id="shift" placeholder="Shift (for Caesar Cipher)" min="0">
+                </div>
+                <textarea id="output-text" placeholder="Output" readonly></textarea>
+                <div class="button-group">
+                    <button id="encode-btn">Encode</button>
+                    <button id="decode-btn">Decode</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+</body>
+<script src="script.js"></script>
+</html>
